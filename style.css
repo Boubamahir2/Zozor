@@ -152,7 +152,7 @@ nav a:hover {
 }
 /*fin de banner*/
 
-article {
+article {/*article*/
   margin-top: 40px;
   display: flex;
   margin-bottom: 20px;
@@ -164,7 +164,9 @@ article {
   text-align: justify;
 }
 
-aside {
+aside { /*la debut de aside dans l'article*/
+  margin-top: 30px;
+  position: relative;
   background-color: #706b64;
   text-align: justify;
   width: 400px;
@@ -174,22 +176,80 @@ aside {
   font-size: 1.2em;
   margin-left: 20px;
 }
+aside p {
+  margin: 15px;
+}
 
-footer {
+.bulle {
+  position: absolute;
+
+  top: 150px;
+  align-items: center;
+}
+
+.tete {
+  align-items: center;
+  text-align: center;
+} 
+#photo_zozor img {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-m {
+  margin: top 15px;
   display: flex;
   justify-content: space-between;
 }
+.social-m img {
+  width: 20%;
+  bottom: 5px;
+}/* la fin de Aside dans larticle*/
 
+/*footer*/
+footer { 
+  font-weight: bold;
+  justify-content: space-between;
+  display: flex;
+  background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+  padding-top: 25px;
+}
+
+footer h1 {
+
+  font-size: 0.9em;
+}
 .mes-photos {
   display: flex;
+  
 }
+.mes-photos img{
+  border: 1px solid #181818;
+  margin-right: 2px;
+}
+
 
 .mes-photos p {
   margin: 5px;
   border: none;
   border-radius: 5px;
+  width: 28%;
 }
 
 .mes-amis {
   display: flex;
+  width: 31%;
 }
+
+.mes-amis li{
+
+  color:rgb(158, 9, 9);
+}
+
+.mes-amis ul{
+
+    list-style-image: url('images/ico_liensexterne.png');
+}
+ /* fin de footer*/
